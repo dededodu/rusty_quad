@@ -10,11 +10,23 @@ name = "rusty_quad"
 test = false
 bench = false
 
+[[bin]]
+name = "test_imu"
+test = false
+bench = false
+
+[[bin]]
+name = "test_i2c"
+test = false
+bench = false
+
 [dependencies]
 panic-halt = "1.0.0"
 ufmt = "0.2.0"
 nb = "1.1.0"
 embedded-hal = "1.0"
+bno055 = "0.4.0"
+format_no_std = "1.2.0"
 
 [dependencies.arduino-hal]
 git = "https://github.com/rahix/avr-hal"
